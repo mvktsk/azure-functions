@@ -2,7 +2,6 @@ const fetch = require("node-fetch");
 
 const getData = async url => {
     try {
-        context.log('getData function processed a request.');
         const response = await fetch(url);
         const json = await response.json();
         console.log(json);
@@ -12,7 +11,6 @@ const getData = async url => {
         console.log(error);
     }
 };
-
 
 module.exports = async function (context, req) {
 
@@ -34,7 +32,6 @@ module.exports = async function (context, req) {
     const rate = req.query.rate ? req.query.rate : 1;
 
     const currencyQuery = `https://api.exchangeratesapi.io/latest?symbols=${requiredCurrency}&base=${baseCurrency}`;
-    console.log(currencyQuery);
 
     const currencyResponse = await getData(currencyQuery);
 
