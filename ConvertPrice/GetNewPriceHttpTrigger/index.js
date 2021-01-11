@@ -53,8 +53,8 @@ module.exports = async function (context, req) {
     else{
         responseStatus = 400; // Bad Request 
         responseBody = '';
-        if (!price) responseBody = 'Required input parameter price are not defined \n';
-        if (!currencyResponse) responseBody = 'api.exchangeratesapi.io not response \n';
+        if (!price) responseBody += 'Required input parameter price are not defined \n';
+        if (!currencyResponse) responseBody += 'api.exchangeratesapi.io not response \n';
     }
 
     context.res = {
