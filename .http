@@ -1,12 +1,9 @@
 GET https://recalcprice.azurewebsites.net/api/GetNewPriceHttpTrigger?base=USD&required=EUR
 ###
 
-GET http://localhost:7071/api/GetNewPriceHttpTrigger?base=USD&required=EUR&price=1
-###
-
 GET https://api.exchangeratesapi.io/latest?symbols=USD&base=EUR;
 ###
 
 GET https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
-
+###
 
