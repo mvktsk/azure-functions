@@ -5,5 +5,5 @@ GET https://api.exchangeratesapi.io/latest?symbols=USD&base=EUR;
 ###
 
 GET https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
-
+###
 
